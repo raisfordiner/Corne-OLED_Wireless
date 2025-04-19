@@ -35,7 +35,7 @@
 
         del {
             bindings = <&kp DEL>;
-            key-positions = <32 31>;
+            key-positions = <32 33>;
         };
 
         L_num {
@@ -54,8 +54,13 @@
         };
 
         L_sys {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <24 35>;
+        };
+
+        L_func {
+            bindings = <&mo 4>;
+            key-positions = <41 36>;
         };
     };
 
@@ -88,10 +93,10 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LBRC)  &kp LS(AMPS)  &kp LS(STAR)   &kp TILDE      &kp LS(RBRC)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LPAR)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(RPAR)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LBKT      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp RBKT      &trans
-                        &trans  &trans  &trans    &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACE        &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp RIGHT_BRACE        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS  &kp DOLLAR     &kp PERCENT   &kp CARET  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LBKT              &kp EXCL       &kp AT        &kp HASH   &kp RBKT               &trans
+                        &trans  &trans  &trans    &trans                &trans         &trans
             >;
         };
 
@@ -101,6 +106,15 @@
 &trans  &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT    &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
 &trans  &trans          &trans          &trans          &trans           &msc SCRL_DOWN     &kp PG_DN  &trans    &trans   &trans     &trans  &trans
                                         &trans          &trans           &trans             &trans     &trans    &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans
+                          &trans   &trans   &trans     &trans   &trans   &trans
             >;
         };
 
